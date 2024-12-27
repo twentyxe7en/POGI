@@ -1,0 +1,79 @@
+* {
+	padding: 0;
+	margin: 0;
+	font-family: Calibri;
+	font-size: 48px;
+	box-sizing: border-box;
+}
+
+.container {
+	height: 100vh;
+	width: 100vw;
+	padding: 0 !important;
+	background: #000;
+	display: flex;
+	position: relative;
+}
+
+.gallery {
+	height: 100vh;
+	width: 100vw;
+/*	width: calc(100vw - 30em);*/
+	background: #05f;
+	display: relative;
+}
+
+.gallery {
+	background-image: url(mega-lucario-vs-pikachu.png);
+	background-position: right;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.form {
+	height: 100vh;
+	width: 30em;
+	background: rgba(255, 255, 255, 0.3);
+	display: flex;
+	position: absolute;
+	right: 0;
+	align-items: center;
+	z-index: 1;
+}
+
+.form .login {
+	height: 30%;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.form .login input {
+	width: 85%;
+	height: 150px;
+	font-size: 64px;
+	text-align: center;
+	margin-bottom: 2em;
+	outline: none;
+	background: none;
+	border: none;
+	border-bottom: 2px solid #000;
+}
+
+.form .login input::placeholder {
+	color: #000;
+}
+
+.form .login input[type="button"] {
+	margin: 0;
+	text-transform: uppercase;
+	font-style: italic;
+	background: #f66;
+	font-weight: 600;
+	border: hidden;
+	border-radius: 100px;
+	cursor: pointer;
+	color: #fff;
+}
